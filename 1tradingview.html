@@ -1,0 +1,2454 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+.filterDiv {
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: 1px solid;
+  margin-top: 3px;
+  outline: none;
+  padding: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <script type="text/javascript">
+    function zoom() {
+        document.body.style.zoom = "80%" 
+    }
+</script>
+
+<body onload="zoom()">
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+  <button class="btn" onclick="filterSelection('EURUSD')">EUR-USD</button>
+  <button class="btn" onclick="filterSelection('EURGBP')">EUR-GBP</button>
+  <button class="btn" onclick="filterSelection('EURCHF')">EUR-CHF</button>
+  <button class="btn" onclick="filterSelection('EURJPY')">EUR-JPY</button>
+  <button class="btn" onclick="filterSelection('EURCAD')">EUR-CAD</button>
+  <button class="btn" onclick="filterSelection('EURAUD')">EUR-AUD</button>
+  <button class="btn" onclick="filterSelection('EURNZD')">EUR-NZD</button>
+  <button class="btn" onclick="filterSelection('GBPUSD')">GBP-USD</button>
+  <button class="btn" onclick="filterSelection('GBPCHF')">GBP-CHF</button>
+  <button class="btn" onclick="filterSelection('GBPJPY')">GBP-JPY</button>
+  <button class="btn" onclick="filterSelection('GBPCAD')">GBP-CAD</button>
+  <button class="btn" onclick="filterSelection('GBPAUD')">GBP-AUD</button>
+  <button class="btn" onclick="filterSelection('GBPNZD')">GBP-NZD</button>
+  <button class="btn" onclick="filterSelection('USDCHF')">USD-CHF</button>
+  <button class="btn" onclick="filterSelection('USDJPY')">USD-JPY</button>
+  <button class="btn" onclick="filterSelection('USDCAD')">USD-CAD</button>
+  <button class="btn" onclick="filterSelection('AUDUSD')">AUD-USD</button>
+  <button class="btn" onclick="filterSelection('AUDCAD')">AUD-CAD</button>
+  <button class="btn" onclick="filterSelection('AUDJPY')">AUD-JPY</button>
+  <button class="btn" onclick="filterSelection('AUDCHF')">AUD-CHF</button>
+  <button class="btn" onclick="filterSelection('AUDNZD')">AUD-NZD</button>
+  <button class="btn" onclick="filterSelection('CHFJPY')">CHF-JPY</button>
+  <button class="btn" onclick="filterSelection('CADCHF')">CAD-CHF</button>
+  <button class="btn" onclick="filterSelection('NZDUSD')">NZD-USD</button>
+  <button class="btn" onclick="filterSelection('NZDCHF')">NZD-CHF</button>
+  <button class="btn" onclick="filterSelection('NZDJPY')">NZD-JPY</button>
+  <button class="btn" onclick="filterSelection('NZDCAD')">NZD-CAD</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv EURUSD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Analysis for EURUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Analysis for EURUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Analysis for EURUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_372dc"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURUSD/" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURUSD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_372dc"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURGBP"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURGBP/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURGBP</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURGBP",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURGBP/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURGBP</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURGBP",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURGBP/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURGBP</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURGBP",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_f7af2"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURGBP/" rel="noopener" target="_blank"><span class="blue-text">EURGBP Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURGBP",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_f7af2"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_9b264"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCHF/" rel="noopener" target="_blank"><span class="blue-text">EURCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_9b264"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_e578b"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURJPY/" rel="noopener" target="_blank"><span class="blue-text">EURJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_e578b"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURCAD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_a12a0"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURCAD/" rel="noopener" target="_blank"><span class="blue-text">EURCAD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURCAD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_a12a0"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURAUD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_d4141"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURAUD/" rel="noopener" target="_blank"><span class="blue-text">EURAUD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURAUD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_d4141"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv EURNZD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for EURNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:EURNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_1f2ae"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-EURNZD/" rel="noopener" target="_blank"><span class="blue-text">EURNZD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:EURNZD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_1f2ae"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPUSD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_f4320"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPUSD/" rel="noopener" target="_blank"><span class="blue-text">GBPUSD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPUSD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_f4320"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_feed3"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCHF/" rel="noopener" target="_blank"><span class="blue-text">GBPCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_feed3"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_347f9"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPJPY/" rel="noopener" target="_blank"><span class="blue-text">GBPJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_347f9"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPCAD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_62580"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPCAD/" rel="noopener" target="_blank"><span class="blue-text">GBPCAD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPCAD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_62580"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPAUD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPAUD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPAUD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPAUD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_dc290"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPAUD/" rel="noopener" target="_blank"><span class="blue-text">GBPAUD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPAUD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_dc290"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv GBPNZD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for GBPNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:GBPNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_82729"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-GBPNZD/" rel="noopener" target="_blank"><span class="blue-text">GBPNZD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:GBPNZD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_82729"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv USDCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_5a785"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCHF/" rel="noopener" target="_blank"><span class="blue-text">USDCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:USDCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_5a785"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv USDJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_3c030"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDJPY/" rel="noopener" target="_blank"><span class="blue-text">USDJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:USDJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_3c030"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv USDCAD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for USDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:USDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_1dc4d"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-USDCAD/" rel="noopener" target="_blank"><span class="blue-text">USDCAD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:USDCAD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_1dc4d"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv AUDUSD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_c85f6"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDUSD/" rel="noopener" target="_blank"><span class="blue-text">AUDUSD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:AUDUSD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_c85f6"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv AUDCAD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_644cd"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCAD/" rel="noopener" target="_blank"><span class="blue-text">AUDCAD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:AUDCAD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_644cd"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv AUDJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_08c3d"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDJPY/" rel="noopener" target="_blank"><span class="blue-text">AUDJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:AUDJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_08c3d"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv AUDCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_025dc"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDCHF/" rel="noopener" target="_blank"><span class="blue-text">AUDCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:AUDCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_025dc"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv AUDNZD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDNZD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for AUDNZD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:AUDNZD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_d96ea"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-AUDNZD/" rel="noopener" target="_blank"><span class="blue-text">AUDNZD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:AUDNZD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_d96ea"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv CHFJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CHFJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CHFJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CHFJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CHFJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CHFJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CHFJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CHFJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CHFJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CHFJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_e64ba"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CHFJPY/" rel="noopener" target="_blank"><span class="blue-text">CHFJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:CHFJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_e64ba"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv CADCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CADCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CADCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CADCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CADCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CADCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CADCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CADCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for CADCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:CADCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_3232f"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-CADCHF/" rel="noopener" target="_blank"><span class="blue-text">CADCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:CADCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_3232f"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv NZDUSD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDUSD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDUSD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_abdfc"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDUSD/" rel="noopener" target="_blank"><span class="blue-text">NZDUSD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:NZDUSD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_abdfc"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv NZDCHF"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCHF/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCHF</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCHF",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_b9066"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCHF/" rel="noopener" target="_blank"><span class="blue-text">NZDCHF Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:NZDCHF",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_b9066"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv NZDJPY"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDJPY/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDJPY</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDJPY",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_a373d"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDJPY/" rel="noopener" target="_blank"><span class="blue-text">NZDJPY Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:NZDJPY",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_a373d"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+  <div class="filterDiv NZDCAD"><table>
+    <tr>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "1m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "5m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+      <th><!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCAD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for NZDCAD</span></a> by TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+          "interval": "15m",
+          "width": "280",
+          "isTransparent": false,
+          "height": "520",
+          "symbol": "OANDA:NZDCAD",
+          "showIntervalTabs": true,
+          "locale": "en",
+          "colorTheme": "light"
+        }
+          </script>
+        </div>
+        <!-- TradingView Widget END --></th>
+
+        <th><!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_e098a"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/OANDA-NZDCAD/" rel="noopener" target="_blank"><span class="blue-text">NZDCAD Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "width": 440,
+            "height": 520,
+            "symbol": "OANDA:NZDCAD",
+            "interval": "1",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "save_image": false,
+            "container_id": "tradingview_e098a"
+          }
+            );
+            </script>
+          </div>
+          <!-- TradingView Widget END --></th>
+
+    </tr>
+  </table>
+  </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
